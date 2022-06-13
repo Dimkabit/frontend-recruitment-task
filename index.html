@@ -6,6 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Dzmitry Lakhmitski - Recruitment task</title>
 </head>
-<body>
-
+<body class="body">
+	<div class="wrapper">
+		<main class="page">
+			<div class="page__container main-page">
+				<div class="main-page__image">
+					<picture><source srcset="img/hero.webp" type="image/webp"><img src="img/hero.png" alt="photo of the surf"></picture>
+				</div>
+				<div class="main-page__content">
+					<h1 class="main-page__title">Lorem Ipsum</h1>
+					<p class="main-page__text">Infinitely scalable, feature-rich and cloud-native data management and protection for modern and legacy infrastructures and SaaS platforms, managed via a single app with no hardware required.</p>
+					<button type="button" data-popup="#popup" class="main-page__button button">Button</button>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">✘</button>
+				<div class="popup__text">
+					<h2>Alert!</h2>
+					<p>You have clicked <span class="popup__count">{popupCount}</span> to related button. <button type="button" class="popup__reset">Reset</button></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="dist/all.js"></script>
 </body>
