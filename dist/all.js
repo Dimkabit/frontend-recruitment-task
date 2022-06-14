@@ -36,9 +36,11 @@
 	mainPageButton.addEventListener("click", popupOpen);
 	popupClose.addEventListener("click", popupClosest);
 	popupReset.addEventListener("click", popupResets);
-	popup.addEventListener("click", (e => {
+	popup.addEventListener("click", (e) => {
 		 const target = e.target;
-		 if (target.classList.contains("popup__wrapper") || target.classList.contains("popup__close")) popupClosest();
-	}));
+		 if (target.classList.contains("popup__wrapper") || target.classList.contains("popup__close")) {
+			popupClosest();
+		 }
+	});
 
 
