@@ -1,0 +1,12 @@
+
+.button {
+	display: inline-flex;
+	padding: rem(16) rem(40);
+	background: #E4C1AE;
+	border-radius: rem(32);
+	@media (any-hover: hover) {
+		&:hover {
+			background: #bd9b89;
+		}
+	}
+}
